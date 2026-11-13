@@ -1574,7 +1574,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   updateMeta();
   renderOverview();
   try {
-    const res = await fetch('IPC%20Colombia.xlsx');
+    const res = await fetch('IPC20Colombia.xlsx');
     if (res.ok) {
       const buf = await res.arrayBuffer();
       const wb = XLSX.read(buf, {type: 'array'});
